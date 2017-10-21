@@ -73,7 +73,7 @@ Foreach adalah struktur perulangan seperti for dan while, terkecuali foreach har
 * Contoh penggunaannya :
 ```php
 $nilai = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
-foreach ($nilais as $key => $value) {
+foreach ($nilai as $key => $value) {
     echo "Rata-rata nilai $key adalah $value <br />";
 }
 ```
@@ -133,11 +133,11 @@ Untuk mengakses elemen array yang berindex numerik pada index tertentu, kita lan
 ```php
 $nama = ["Dono","Doni","Dina","Wati"];
 //mencetak index 0
-echo $nama[0];
-echo"<br>";
+    echo $nama[0];
+    echo"<br>";
 
 //mencetak index 2
-echo $nama[2];
+    echo $nama[2];
 ```
 Jika seandainya ingin mencetak keseluruhan nilai dalam array, menghitung panjang array terlebih dahulu dengan keyword count(), dan dengan bantuan looping bisa mencetaknya satu persatu.
 seperti contoh dibawah ini :
@@ -158,10 +158,10 @@ Untuk mengakses elemen array index associatif, langsung menggunakan nama labelny
 ```php
 $nama = array("Dono"=>"0123","Doni"=>"1234","Dina"=>"2345","Wati"=>"3456");
 
-echo $nama["Dono"]."<br>";
-echo $nama["Doni"]."<br>";
-echo $nama["Dina"]."<br>";
-echo $nama["Wati"]."<br>";
+    echo $nama["Dono"]."<br>";
+    echo $nama["Doni"]."<br>";
+    echo $nama["Dina"]."<br>";
+    echo $nama["Wati"]."<br>";
 ``` 
 Jika seandainya kita ingin mencetak keseluruhan nilai pada array associatif kita dapat menggunakan keyword list dan each seperti contoh dibawah ini :
 ```php
@@ -169,8 +169,8 @@ $nama = array("Dono"=>"0123","Doni"=>"1234","Dina"=>"2345","Wati"=>"3456");
 
 while(list($index, $nilai)=each($nama))
 {
- echo "Index ke $index berisi $nilai";
- echo"<br>";
+    echo "Index ke $index berisi $nilai";
+    echo"<br>";
 }
 ```
 dari contoh diatas, maka list akan mengurutkan index associatif yang mana tiap-tiap label akan disimpan pada variabel $index dan isinya disimpan dalam variabel $nilai. 
