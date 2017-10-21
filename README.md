@@ -144,8 +144,7 @@ seperti contoh dibawah ini :
 ```php
 $nama = array("Dono","Doni","Dina","Wati");
 
-for($i=0;$i<count($nama);$i++)
-{
+for($i=0;$i<count($nama);$i++) {
     echo "Index ke $i adalah $nama[$i]";
     echo "<br>"
 }
@@ -167,8 +166,7 @@ Jika seandainya kita ingin mencetak keseluruhan nilai pada array associatif kita
 ```php
 $nama = array("Dono"=>"0123","Doni"=>"1234","Dina"=>"2345","Wati"=>"3456");
 
-while(list($index, $nilai)=each($nama))
-{
+while(list($index, $nilai)=each($nama)) {
     echo "Index ke $index berisi $nilai";
     echo"<br>";
 }
