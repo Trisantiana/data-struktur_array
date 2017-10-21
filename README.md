@@ -52,7 +52,11 @@ for ($i=0; $i<=3; $i++) {
 ```
 **Array String pada PHP**
 
-Array string memiliki indeks berupa string. Pendeklarasian array string caranya sama dengan deklarasi array numerik: $namas = array(); atau $angkas = [];. Sedangkan untuk menginisialisasi atau langsung mengisi array string, 
+Array string memiliki indeks berupa string. Pendeklarasian array string caranya sama dengan deklarasi array numerik: 
+```php
+$namas = array(); atau $angkas = [];
+```
+Sedangkan untuk menginisialisasi atau langsung mengisi array string, 
 caranya:
 
 ```php
