@@ -1,13 +1,15 @@
 # Data Struktur Array
 Array adalah Suatu struktur data yang dapat menyimpan banyak nilai dalam sebuah variabel.
 Pada kebanyakan bahasa pemrograman, array harus berisi kumpulan data yang tipe data sejenis. Pada pemrogragraman PHP, dalam sebuah variabel array dapat memiliki tipe data lebih dari satu. 
-/* Array adalah suatu variabel yang terdiri dari sekumpulan data dimana data-data tersebut mempunyai tipe data yang sama. Setiap data disimpan dalam alamat memori yang berbeda-beda dan disebut dengan elemen array. Setiap elemen mempunyai nilai indek sesuai dengan urutannya. 
-Tempat menyimpanya sekumpulan data yang memilki tipe data yang sama dan mempunyai 2 indek(baris dan kolom). Array dideklarasikan dengan tanda [ ] atau (bracket) */
+Array adalah suatu variabel yang terdiri dari sekumpulan data dimana data-data tersebut mempunyai tipe data yang sama. Setiap data disimpan dalam alamat memori yang berbeda-beda dan disebut dengan elemen array. Setiap elemen mempunyai nilai indek sesuai dengan urutannya. 
+Tempat menyimpanya sekumpulan data yang memilki tipe data yang sama dan mempunyai 2 indek(baris dan kolom). Array dideklarasikan dengan tanda [ ] atau (bracket).
 #### Bentuk Umum dari tipe data array adalah :
+
 tipe_data nama_array[jumlah_elemen]. Jika ingin mendeklarasikan sebuah array dengan tipe data integer dengan nama a dan jumlah elemen array nya 10 maka kodenya adalah : **int a[10]**
 
 ## Array pada PHP
 **Fungsi print_r pada PHP**
+
 Dalam menampilkan isi suatu variabel array atau object,biasanya menggunakan fungsi print_r() dan fungsi var_dump().Jika menggunakan fungsi print_r() akan tampak lebih rapi.
 * Contoh :
 ```php
@@ -23,6 +25,7 @@ var_dump($a);
 ```
 
 **Array Numeric pada php**
+
 Array pada PHP dideklarasikan dengan cara:
 ```php
 $nama = array();
@@ -39,6 +42,7 @@ array_push($nama, "Suryadi");
 echo "<pre>".print_r($nama, true)."</pre>";
 ```
 * Contoh Array yang sudah diisi :
+
 ```php
 $pelajaran = array("Matematika","Kimia","Fisika","Biologi");
 $nilai = [100, 80, 75, 78];
@@ -47,16 +51,20 @@ for ($i=0; $i<=3; $i++) {
 }
 ```
 **Array String pada PHP**
+
 Array string memiliki indeks berupa string. Pendeklarasian array string caranya sama dengan deklarasi array numerik: $namas = array(); atau $angkas = [];. Sedangkan untuk menginisialisasi atau langsung mengisi array string, 
 caranya:
+
 ```php
 $nilai = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
     echo "<pre>".print_r($nilai,true)."</pre>";
 ```
 dan hasilnya adalah :
+
 nilai $nilai['Matematika'] adalah 100, $nilai["Kimia"] adalah 80, $nilai["Fisika"] adalah 75, dan nilai $nilai['Biologi'] adalah 78.
 
 **Perulangan foreach pada PHP**
+
 Foreach adalah struktur perulangan seperti for dan while, terkecuali foreach harus digabungkan dengan array atau objek. Perulangan foreach melakukan perulangan untuk setiap elemen di dalam array.
 * Contoh penggunaannya :
 ```php
@@ -67,6 +75,7 @@ foreach ($nilais as $key => $value) {
 ```
 
 **Fungsi-fungsi array pada PHP**
+
 Beberapa fungsi yang sering dipakai antara lain: explode(), implode(), count(), in_array(), asort() dan arsort(), ksort dan krsort().
 
 * Fungsi explode() adalah untuk mengubah satu string CSV (Comma Separated Value) menjadi array. 
@@ -91,7 +100,8 @@ echo "<pre>".print_r($hobis, true)."</pre>";
 Fungsi count() menghasilkan jumlah elemen di dalam array, sedangkan in_array() untuk memeriksa apakah suatu nilai tertentu terdapat di dalam suatu array.
 
 
-# Referensi 2 [Array](https://ilmu-detil.blogspot.co.id/2016/06/pengertian-tipe-data-array-pada-php.html)
+# Referensi 2 
+[Array](https://ilmu-detil.blogspot.co.id/2016/06/pengertian-tipe-data-array-pada-php.html)
 Array adalah Suatu struktur data yang dapat menyimpan banyak nilai dalam sebuah variabel.
 Pada kebanyakan bahasa pemrograman, array harus berisi kumpulan data yang tipe data sejenis. Pada pemrograman PHP, dalam sebuah variabel array dapat memiliki tipe data lebih dari satu. 
 
@@ -100,6 +110,7 @@ Index pada array dapat berupa numerik  yang disebut dengan index numerik dan bis
 Index numerik pada sebuah array selalui dimulai dari 0, jadi jika ingin mengakses sebuah elemen, misal : elemen P berada pada index-0. Elemen I berada pada : index-6, dan index-21. Karakter kosong seperti pada index ke-5, index 17 juga dianggap sebagai elemen.
 
 1. Inisialisasi Array
+
 Untuk memberi nilai array (inisialisasi array) dapat dilakukan dengan cara sebagai berikut :
 
 ```php
@@ -112,6 +123,7 @@ $nama = array("Dono"=>"08126767","Doni"=>"08116762","Dina"=>"08524545","Wati"=>"
 ```
 
 2. Mengakses elemen array index numerik
+
 Untuk mengakses elemen array yang berindex numerik pada index tertentu, kita langsung menggunakan nilai indexnya seperti contoh dibawah ini :
 
 ```php
@@ -136,6 +148,7 @@ for($i=0;$i<count($nama);$i++)
 ```
 
 3. Mengakses elemen array index associatif
+
 Untuk mengakses elemen array index associatif, langsung menggunakan nama labelnya sepreti contoh dibawah ini :
 
 ```php
