@@ -93,13 +93,13 @@ Beberapa fungsi yang sering dipakai antara lain: explode(), implode(), count(), 
 ```php
 $nilais = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
 $str = implode(", ", $nilais);
-echo $str;
+    echo $str;
 $hobi = "Olahraga, Main game, Nonton, Makan, Nongkrong";
 $hobis = explode(", ", $hobi);
-echo "<pre>".print_r($hobis, true)."</pre>";
+    echo "<pre>".print_r($hobis, true)."</pre>";
 asort($hobis);
-echo "Setelah sort:";
-echo "<pre>".print_r($hobis, true)."</pre>";
+    echo "Setelah sort:";
+    echo "<pre>".print_r($hobis, true)."</pre>";
 ```
 Fungsi count() menghasilkan jumlah elemen di dalam array, sedangkan in_array() untuk memeriksa apakah suatu nilai tertentu terdapat di dalam suatu array.
 
