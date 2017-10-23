@@ -13,14 +13,14 @@ tipe_data nama_array[jumlah_elemen]. Jika ingin mendeklarasikan sebuah array den
 Dalam menampilkan isi suatu variabel array atau object,biasanya menggunakan fungsi print_r() dan fungsi var_dump().Jika menggunakan fungsi print_r() akan tampak lebih rapi.
 * Contoh :
 ```php
-$angka = [1,2,3,4,5,6,7,8,9,10];
+$angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 print_r($angka); //Versi singkat
 echo "<br /><br />";
 echo "<pre>".print_r($angka, true)."</pre>";
 ```
 * Contoh menggunakan var_dump() :
 ```php
-$a = ["a","b","c"];
+$a = ["a", "b", "c"];
 var_dump($a);
 ```
 
@@ -44,7 +44,7 @@ echo "<pre>".print_r($nama, true)."</pre>";
 * Contoh Array yang sudah diisi :
 
 ```php
-$pelajaran = ['Matematika','Kimia','Fisika','Biologi'];
+$pelajaran = ['Matematika', 'Kimia', 'Fisika', 'Biologi'];
 $nilai = [100, 80, 75, 78];
 for ($i=0; $i<=3; $i++) {
     echo "$i. Pelajaran $pelajaran[$i] nilainya $nilai[$i]<br />";
@@ -60,7 +60,7 @@ Sedangkan untuk menginisialisasi atau langsung mengisi array string,
 caranya:
 
 ```php
-$nilai = ["Matematika"=>100,"Kimia"=>80,"Fisika"=>75,"Biologi"=>78];
+$nilai = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
     echo "<pre>".print_r($nilai,true)."</pre>";
 ```
 dan hasilnya adalah :
@@ -91,7 +91,7 @@ Beberapa fungsi yang sering dipakai antara lain: explode(), implode(), count(), 
 * Contoh :
 
 ```php
-$nilais = ["Matematika"=>100,"Kimia"=>80,"Fisika"=>75,"Biologi"=>78];
+$nilais = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
 $str = implode(", ", $nilais);
     echo $str;
 $hobi = "Olahraga, Main game, Nonton, Makan, Nongkrong";
