@@ -20,7 +20,7 @@ echo "<pre>".print_r($angka, true)."</pre>";
 ```
 * Contoh menggunakan var_dump() :
 ```php
-$a = ["a", "b", "c"];
+$a = ["a","b","c"];
 var_dump($a);
 ```
 
@@ -60,7 +60,7 @@ Sedangkan untuk menginisialisasi atau langsung mengisi array string,
 caranya:
 
 ```php
-$nilai = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
+$nilai = ["Matematika"=>100,"Kimia"=>80,"Fisika"=>75,"Biologi"=>78];
     echo "<pre>".print_r($nilai,true)."</pre>";
 ```
 dan hasilnya adalah :
@@ -91,7 +91,7 @@ Beberapa fungsi yang sering dipakai antara lain: explode(), implode(), count(), 
 * Contoh :
 
 ```php
-$nilais = ["Matematika"=>100, "Kimia"=>80, "Fisika"=>75, "Biologi"=>78];
+$nilais = ["Matematika"=>100,"Kimia"=>80,"Fisika"=>75,"Biologi"=>78];
 $str = implode(", ", $nilais);
     echo $str;
 $hobi = "Olahraga, Main game, Nonton, Makan, Nongkrong";
@@ -124,7 +124,7 @@ $nama = ["Dono","Doni","Dina","Wati"];
 Cara inisialisasi diatas membuat variabel $nama menjadi array berindeks numerik, dimana indexnya dimulai dengan angka 0.
 Jika kita ingin membuat sebuah variabel array berindex associatif, maka indexnya harus berupa label seperti contoh dibawah ini :
 ```php
-$nama = ["Dono"=>"08126767" , "Doni"=>"08116762" , "Dina"=>"08524545" , "Wati"=>"08571234"];
+$nama = ["Dono"=>"08126767","Doni"=>"08116762","Dina"=>"08524545","Wati"=>"08571234"];
 ```
 
 2. Mengakses elemen array index numerik
